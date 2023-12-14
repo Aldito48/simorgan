@@ -1,0 +1,134 @@
+.search-container {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #aaa;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+
+.popup-table tr {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.trow:hover{
+    cursor: pointer;
+}
+
+[id^= "example"] td,th{
+    vertical-align: middle;
+}
+th{
+    text-align: center;
+}
+.center{
+    text-align: center;
+    font-size: large;
+}
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+input[type=file]::file-selector-button:hover {
+background: #0d45a5;
+}
+
+input[type=file] {
+    width: 350px;
+    max-width: 100%;
+    color: #444;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+}
+
+.lihat-gambar{
+    color: blue;
+    cursor: pointer;
+    
+}
+
+#popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+
+  #popup-container.show {
+    display: flex;
+  }
+
+  #popup-img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 3px solid white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  #popup-container.show #popup-img {
+    opacity: 1;
+  }
+
+  /* Gaya untuk tombol close */
+  #close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
